@@ -211,9 +211,10 @@ Built with ❤️ for the Mindo voice-first application
 
 ## 🔗 Links
 
-- **API Documentation:** https://your-app.onrender.com/docs
-- **Frontend Repository:** [Link to frontend repo]
-- **Live Demo:** [Link to live app]
+- **Live Demo:** https://mindo-mine.vercel.app
+- **API Documentation:** https://mindo-backend-1.onrender.com/docs
+- **Deployed Backend:** https://mindo-backend-1.onrender.com
+- **Frontend Repository:** https://github.com/ispastro/mindo-4g.git
 
 ---
 

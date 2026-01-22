@@ -171,6 +171,11 @@ def ai_search_items(
     session: Session = Depends(get_session)
 ):
     """AI-powered natural language search for items"""
+    print(f"\n🔍 AI SEARCH REQUEST:")
+    print(f"   Query: '{query}'")
+    print(f"   User: {current_user.email}")
+    print(f"   Page: {page}, Size: {page_size}")
+    
     # Validate pagination
     if page < 1:
         raise HTTPException(status_code=400, detail="Page must be >= 1")
@@ -179,6 +184,7 @@ def ai_search_items(
     
     # Extract search terms using AI
     search_terms = extract_search_terms(query)
+    print(f"   Extracted terms: '{search_terms}'")
     
     # Base query
     statement = select(Item).where(Item.user_id == current_user.id)
